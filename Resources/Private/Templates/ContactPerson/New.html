@@ -1,0 +1,25 @@
+<f:layout name="Default" />
+
+<f:section name="Title">New contact person</f:section>
+
+<f:section name="Content">
+	<p>Just fill out the following form to create a new contact person:</p>
+
+	<f:form action="create" name="newContactPerson">
+		<ol>
+			<li>
+				<label for="name">Name</label>
+				<f:form.textfield property="name" id="name" />
+			</li>
+		
+			<li>
+				<label for="email">Email</label>
+				<f:form.textfield property="email" id="email" />
+			</li>
+		
+			<li>
+				<f:form.submit value="Create" />
+			</li>
+		</ol>
+	</f:form>
+</f:section>
